@@ -1,15 +1,7 @@
-import useSite from 'hooks/use-site';
-import { getPaginatedPosts } from 'lib/posts';
-import { WebsiteJsonLd } from 'lib/json-ld';
+// import useSite from 'hooks/use-site';
+// import { getPaginatedPosts } from 'lib/posts';
 
 import Layout from 'components/Layout';
-import Header from 'components/Header';
-import Section from 'components/Section';
-import Container from 'components/Container';
-import PostCard from 'components/PostCard';
-import Pagination from 'components/Pagination';
-
-import styles from 'styles/pages/Home.module.scss';
 import Banner from 'components/Banner';
 import Aboutus from 'components/Aboutus';
 import Digital from 'components/Digital';
@@ -17,12 +9,11 @@ import Manage from 'components/Manage';
 import FAQ from 'components/FAQ';
 import Testimonials from 'components/Testimonials';
 import Joinus from 'components/Joinus';
-import Articles from 'components/Articles';
-import Service from 'components/service/diffServices';
+import Service from 'components/service/page';
 
-export default function Home({ posts, pagination }) {
-  const { metadata = {} } = useSite();
-  const { title, description } = metadata;
+export default function Home() {
+  // const { metadata = {} } = useSite();
+  // const { title, description } = metadata;
 
   return (
     <Layout>
@@ -78,7 +69,8 @@ export default function Home({ posts, pagination }) {
         <Manage />
         <FAQ />
         <Testimonials />
-        <Articles />
+        {/* <Articles /> */}
+
         <Joinus />
         {/* <Insta /> */}
       </main>
@@ -86,17 +78,17 @@ export default function Home({ posts, pagination }) {
   );
 }
 
-export async function getStaticProps() {
-  const { posts, pagination } = await getPaginatedPosts({
-    queryIncludes: 'archive',
-  });
-  return {
-    props: {
-      posts,
-      pagination: {
-        ...pagination,
-        basePath: '/posts',
-      },
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const { posts, pagination } = await getPaginatedPosts({
+//     queryIncludes: 'archive',
+//   });
+//   return {
+//     props: {
+//       posts,
+//       pagination: {
+//         ...pagination,
+//         basePath: '/posts',
+//       },
+//     },
+//   };
+// }

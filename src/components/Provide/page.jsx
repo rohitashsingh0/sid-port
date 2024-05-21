@@ -36,9 +36,9 @@ const Provide = () => {
                 Empowering Your Digital Presence{' '}
               </p>
               <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
-                In today's digital age, establishing a strong online presence is essential for businesses to thrive. Our
-                services are tailored to empower your digital journey, ensuring you stand out in the competitive online
-                landscape.{' '}
+                In today&apos;s digital age, establishing a strong online presence is essential for businesses to
+                thrive. Our services are tailored to empower your digital journey, ensuring you stand out in the
+                competitive online landscape.{' '}
               </h4>
               <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0 space-links">
                 Learn more <Image src={'/images/services/arrow.svg'} alt={'arrow'} width={20} height={20} />

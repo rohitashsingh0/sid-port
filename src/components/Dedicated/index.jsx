@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const Dedicated = () => {
   return (
@@ -37,9 +37,8 @@ const Dedicated = () => {
               Dedicated to help peoples design needs.
             </h2>
             <p className="font-medium text-lightblack text-2xl mt-5 text-center lg:text-start">
-              I'm fully dedicated to meeting all your design needs, from concept
-              to creation. With my expertise and passion for design, I'm
-              committed to bringing your vision to life.
+              I&apos;m fully dedicated to meeting all your design needs, from concept to creation. With my expertise and
+              passion for design, I&apos;m committed to bringing your vision to life.
             </p>
             {/* <p className="text-2xl font-semibold mt-12 lg:ml-32 preline text-center lg:text-start">
               {" "}

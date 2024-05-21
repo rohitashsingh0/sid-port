@@ -1,13 +1,10 @@
-"use client";
-import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/20/solid";
+'use client';
+import { Disclosure } from '@headlessui/react';
+import { ChevronUpIcon } from '@heroicons/react/20/solid';
 
 const FAQ = () => {
   return (
-    <div
-      id="faq-section"
-      className="mx-auto max-w-7xl py-24 lg:px-8 bg-blue rounded-2xl my-16 faq-bg"
-    >
+    <div id="faq-section" className="mx-auto max-w-7xl py-24 lg:px-8 bg-blue rounded-2xl my-16 faq-bg">
       <h3 className="text-xl font-normal text-white text-center mb-6">FAQ</h3>
       <h2 className="text-4xl lg:text-6xl font-semibold text-center text-white">
         Frequently asked <br /> questions.
@@ -18,20 +15,12 @@ const FAQ = () => {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                  <span>
-                    What types of digital marketing strategies do you specialize
-                    in?
-                  </span>
-                  <ChevronUpIcon
-                    className={`${
-                      open ? "rotate-180 transform" : ""
-                    } h-5 w-5 text-purple-500`}
-                  />
+                  <span>What types of digital marketing strategies do you specialize in?</span>
+                  <ChevronUpIcon className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`} />
                 </Disclosure.Button>
                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                  We specialize in a range of digital marketing strategies,
-                  including SEO, social media marketing, email marketing, and
-                  content marketing.
+                  We specialize in a range of digital marketing strategies, including SEO, social media marketing, email
+                  marketing, and content marketing.
                 </Disclosure.Panel>
               </>
             )}
@@ -43,20 +32,12 @@ const FAQ = () => {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                  <span>
-                    Can you provide examples of websites or projects you've
-                    previously worked on?
-                  </span>
-                  <ChevronUpIcon
-                    className={`${
-                      open ? "rotate-180 transform" : ""
-                    } h-5 w-5 text-purple-500`}
-                  />
+                  <span>Can you provide examples of websites or projects you&lsquo;ve previously worked on?</span>
+                  <ChevronUpIcon className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`} />
                 </Disclosure.Button>
                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                  Certainly! We've worked on a variety of projects across
-                  different industries, from e-commerce platforms to corporate
-                  websites and personal blogs.
+                  Certainly! We&lsquo;ve worked on a variety of projects across different industries, from e-commerce
+                  platforms to corporate websites and personal blogs.
                 </Disclosure.Panel>
               </>
             )}
@@ -69,19 +50,14 @@ const FAQ = () => {
               <>
                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
                   <span>
-                    How do you ensure that your web development solutions are
-                    tailored to our specific needs and preferences?
+                    How do you ensure that your web development solutions are tailored to our specific needs and
+                    preferences?
                   </span>
-                  <ChevronUpIcon
-                    className={`${
-                      open ? "rotate-180 transform" : ""
-                    } h-5 w-5 text-purple-500`}
-                  />
+                  <ChevronUpIcon className={`${open ? 'rotate-180 transform' : ''} h-5 w-5 text-purple-500`} />
                 </Disclosure.Button>
                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                  We prioritize understanding your unique requirements and
-                  preferences to deliver customized web development solutions
-                  that align perfectly with your goals and objectives.
+                  We prioritize understanding your unique requirements and preferences to deliver customized web
+                  development solutions that align perfectly with your goals and objectives.
                 </Disclosure.Panel>
               </>
             )}

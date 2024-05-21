@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const Banner = () => {
   return (
@@ -27,12 +27,7 @@ const Banner = () => {
         {/* COLUMN-2 */}
 
         <div className="lg:-m-24 lg:pt-20 hidden lg:block">
-          <Image
-            src="/images/banner/banner2.svg"
-            alt="hero-image"
-            width={800}
-            height={642}
-          />
+          <Image src="/images/banner/banner2.svg" alt="hero-image" width={800} height={642} />
         </div>
       </div>
     </div>

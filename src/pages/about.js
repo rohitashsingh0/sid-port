@@ -1,5 +1,4 @@
 import Layout from 'components/Layout';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const about = () => {
@@ -49,10 +48,10 @@ const about = () => {
                   Digital Marketer, Website Designer, & Hosting Provider
                 </h2>
                 <p className="text-gray-700 mt-4 leading-relaxed">
-                  Hello! I'm Sidharth, a passionate digital marketer, skilled website designer, and reliable hosting
-                  provider. With years of experience in the industry, I specialize in creating stunning, user-friendly
-                  websites that help businesses grow online. My expertise in digital marketing ensures that your
-                  business not only looks good but also reaches its target audience effectively.
+                  Hello! I&apos;m Sidharth, a passionate digital marketer, skilled website designer, and reliable
+                  hosting provider. With years of experience in the industry, I specialize in creating stunning,
+                  user-friendly websites that help businesses grow online. My expertise in digital marketing ensures
+                  that your business not only looks good but also reaches its target audience effectively.
                 </p>
                 <p className="text-gray-700 mt-4 leading-relaxed">
                   From crafting bespoke website designs to offering top-notch hosting solutions, I provide a
@@ -60,8 +59,8 @@ const about = () => {
                   enhancing their online presence and driving meaningful engagement with their audience.
                 </p>
                 <p className="text-gray-700 mt-4 leading-relaxed">
-                  Let's work together to take your online presence to the next level. Whether you're looking for a new
-                  website, digital marketing strategy, or reliable hosting, I'm here to help you succeed.
+                  Let&apos;s work together to take your online presence to the next level. Whether you&apos;re looking
+                  for a new website, digital marketing strategy, or reliable hosting, I&apos;m here to help you succeed.
                 </p>
               </div>
             </div>

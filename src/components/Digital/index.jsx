@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const Digital = () => {
   return (
@@ -8,12 +8,9 @@ const Digital = () => {
           {/* COLUMN-1 */}
 
           <div className="pt-24 lg:pl-24 ">
-            <h3 className="text-lg font-normal text-white mb-5 tracking-widest text-center lg:text-start">
-              WHO I AM
-            </h3>
+            <h3 className="text-lg font-normal text-white mb-5 tracking-widest text-center lg:text-start">WHO I AM</h3>
             <h4 className="text-4xl sm:text-6xl font-bold text-white mb-8 leading-snug text-center lg:text-start">
-              I'm a part of digital <br /> agency that builds <br /> amazing
-              products.
+              I&lsquo;m a part of digital <br /> agency that builds <br /> amazing products.
             </h4>
             <div className="text-center lg:text-start">
               <button className="text-xl font-semibold text-white bg-btnblue py-4 px-12 hover:bg-hoblue rounded-full">
@@ -26,12 +23,7 @@ const Digital = () => {
 
           <div>
             <div className="lg:absolute girldoodle">
-              <Image
-                src="/images/digital/Digital.svg"
-                alt="girldoodle"
-                width={815}
-                height={691}
-              />
+              <Image src="/images/digital/Digital.svg" alt="girldoodle" width={815} height={691} />
             </div>
           </div>
         </div>

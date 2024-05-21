@@ -13,8 +13,8 @@ import PostCard from 'components/PostCard';
 import Pagination from 'components/Pagination/Pagination';
 
 import styles from 'styles/templates/Archive.module.scss';
-import Button from 'components/Button';
-import FeaturedImage from 'components/FeaturedImage';
+// import Button from 'components/Button';
+// import FeaturedImage from 'components/FeaturedImage';
 
 const DEFAULT_POST_OPTIONS = {};
 

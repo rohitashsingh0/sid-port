@@ -2,17 +2,12 @@ import Link from 'next/link';
 
 import { postPathBySlug, sanitizeExcerpt } from 'lib/posts';
 
-import Metadata from 'components/Metadata';
-
-import { FaMapPin } from 'react-icons/fa';
-import styles from './PostCard.module.scss';
 import Image from 'next/image';
 
 const PostCard = ({ post, options = {} }) => {
-  const { title, excerpt, slug, date, author, categories, isSticky = false } = post;
+  const { title, excerpt, slug, date, author, categories } = post;
   const { excludeMetadata = [] } = options;
 
-  console.log(post);
   const metadata = {};
 
   if (!excludeMetadata.includes('author')) {
@@ -27,17 +22,23 @@ const PostCard = ({ post, options = {} }) => {
     metadata.categories = categories;
   }
 
-  let postCardStyle = styles.postCard;
+  // let postCardStyle = styles.postCard;
 
-  if (isSticky) {
-    postCardStyle = `${postCardStyle} ${styles.postCardSticky}`;
-  }
+  // if (isSticky) {
+  //   postCardStyle = `${postCardStyle} ${styles.postCardSticky}`;
+  // }
+
+  const maxTitleLength = 50;
+  const maxExcerptLength = 90;
+
+  const truncatedTitle = title.length > maxTitleLength ? title.substring(0, maxTitleLength) + '...' : title;
+  const truncatedExcerpt = excerpt.length > maxExcerptLength ? excerpt.substring(0, maxExcerptLength) + '...' : excerpt;
 
   return (
     <>
       <div key={post.id} className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3">
         <div className="bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative">
-          <Link href="/blogs/read/4">
+          <Link href={postPathBySlug(slug)}>
             <Image
               src={post.imgSrc || '/images/articles/article2.png'}
               alt={post.title}
@@ -47,26 +48,20 @@ const PostCard = ({ post, options = {} }) => {
             />
           </Link>
 
-          {/* <Link href="/">
-            <h3 className="absolute bg-blue text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full article-img">
-              {item.time} read
-            </h3>
-          </Link> */}
-
           <Link href={postPathBySlug(slug)}>
             <h3
               className="text-2xl font-bold pt-6 text-black"
               dangerouslySetInnerHTML={{
-                __html: title,
+                __html: truncatedTitle,
               }}
             />
           </Link>
 
           {excerpt && (
             <div
-              className="text-base font-normal pb-1 opacity-75"
+              className="text-base font-normal pb-1 opacity-75 mt-2"
               dangerouslySetInnerHTML={{
-                __html: sanitizeExcerpt(excerpt),
+                __html: sanitizeExcerpt(truncatedExcerpt),
               }}
             />
           )}

@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getPaginatedPosts } from 'lib/posts';
 
 // CAROUSEL DATA
 const postData = [
@@ -88,7 +89,8 @@ const settings = {
   ],
 };
 
-const Articles = () => {
+const Articles = ({ posts }) => {
+  console.log('posts', posts);
   return (
     <div className="bg-lightgrey py-20" id="blog-section">
       <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 ">
@@ -125,3 +127,15 @@ const Articles = () => {
 };
 
 export default Articles;
+
+export async function getStaticProps() {
+  const { posts } = await getPaginatedPosts({
+    queryIncludes: 'archive',
+  });
+  console.log('posts', posts);
+  return {
+    props: {
+      posts,
+    },
+  };
+}

@@ -5,16 +5,13 @@ const Beliefs = () => {
         {/* COLUMN-1 */}
 
         <div className="bg-darkblue bg-beliefs pt-12 px-10 sm:px-24 pb-52 md:pb-70 rounded-3xl">
-          <h2 className="text-lg font-normal text-white tracking-widest mb-5 text-center sm:text-start">
-            BELIEFS
-          </h2>
+          <h2 className="text-lg font-normal text-white tracking-widest mb-5 text-center sm:text-start">BELIEFS</h2>
           <h3 className="text-4xl sm:text-65xl font-bold text-white leading-snug mb-5 text-center sm:text-start">
-            Honesty{" "}
-            <span className="text-grey">and hard work are my beliefs.</span>
+            Honesty <span className="text-grey">and hard work are my beliefs.</span>
           </h3>
           <h5 className="text-offwhite pt-2 mb-5 text-center sm:text-start">
-            Integrity and dedication form the cornerstone of my approach,
-            ensuring honesty and hard work are woven into every project.
+            Integrity and dedication form the cornerstone of my approach, ensuring honesty and hard work are woven into
+            every project.
           </h5>
           <div className="text-center sm:text-start">
             <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
@@ -26,16 +23,13 @@ const Beliefs = () => {
         {/* COLUMN-2 */}
 
         <div className="bg-build pt-12 px-10 sm:px-24 pb-52 md:pb-70 rounded-3xl">
-          <h2 className="text-lg font-normal text-blue tracking-widest mb-5 text-center sm:text-start">
-            BUILD
-          </h2>
+          <h2 className="text-lg font-normal text-blue tracking-widest mb-5 text-center sm:text-start">BUILD</h2>
           <h3 className="text-4xl sm:text-65xl font-bold text-black leading-snug mb-5 text-center sm:text-start">
-            <span className="text-blue">Build</span> that great idea that you
-            have.
+            <span className="text-blue">Build</span> that great idea that you have.
           </h3>
           <h5 className="bluish pt-2 mb-5 text-center sm:text-start">
-            Transforming great ideas into reality is our passion, driving us to
-            innovate and create solutions that inspire and succeed.
+            Transforming great ideas into reality is our passion, driving us to innovate and create solutions that
+            inspire and succeed.
           </h5>
           <div className="text-center sm:text-start">
             <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">

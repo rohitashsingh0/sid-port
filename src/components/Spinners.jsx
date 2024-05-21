@@ -1,11 +1,7 @@
-import { ClipLoader } from "react-spinners";
-import React from "react";
+import { ClipLoader } from 'react-spinners';
+import React from 'react';
 
-interface SpinnerProps {
-  loading: boolean;
-}
-
-const Spinner: React.FC<SpinnerProps> = ({ loading }) => {
+const Spinner = ({ loading }) => {
   return (
     <div className="spinner-container">
       <ClipLoader loading={loading} size={50} />

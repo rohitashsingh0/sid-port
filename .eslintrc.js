@@ -15,6 +15,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:@next/next/recommended',
     'next/core-web-vitals',
+    'prettier',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -23,12 +24,13 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['react', 'prettier'],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     '@next/next/no-img-element': 'off',
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
 };

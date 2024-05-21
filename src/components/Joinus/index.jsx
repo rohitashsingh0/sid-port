@@ -10,7 +10,7 @@ const Joinus = () => {
           </h2>
           <p className="text-lightblack text-base font-normal">
             Elevate your business to new heights with our innovative solutions and expert guidance. <br />
-            Together, we'll unlock new opportunities and propel your success to the next level.
+            Together, we&lsquo;ll unlock new opportunities and propel your success to the next level.
           </p>
         </div>
 

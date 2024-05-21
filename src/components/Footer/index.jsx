@@ -7,36 +7,36 @@ const products = [
     section: 'Menu',
     link: [
       { name: 'Home', url: '/' },
-      { name: 'Popular', url: '/popular' },
+      { name: 'My Work', url: '/mywork' },
       { name: 'About', url: '/about' },
       { name: 'Contact', url: '/contact' },
     ],
   },
-  {
-    id: 2,
-    section: 'Category',
-    link: [
-      { name: 'Design', url: '/design' },
-      { name: 'Mockup', url: '/mockup' },
-      { name: 'View all', url: '/all' },
-      { name: 'Log In', url: '/login' },
-    ],
-  },
-  {
-    id: 3,
-    section: 'Pages',
-    link: [
-      { name: '404', url: '/404' },
-      { name: 'Instructions', url: '/instructions' },
-      { name: 'License', url: '/license' },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   section: 'Category',
+  //   link: [
+  //     { name: 'Design', url: '/design' },
+  //     { name: 'Mockup', url: '/mockup' },
+  //     { name: 'View all', url: '/all' },
+  //     { name: 'Log In', url: '/login' },
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   section: 'Pages',
+  //   link: [
+  //     { name: '404', url: '/404' },
+  //     { name: 'Instructions', url: '/instructions' },
+  //     { name: 'License', url: '/license' },
+  //   ],
+  // },
   {
     id: 4,
     section: 'Others',
     link: [
-      { name: 'Styleguide', url: '/styleguide' },
-      { name: 'Changelog', url: '/changelog' },
+      { name: 'Services', url: '/services' },
+      { name: 'smm', url: 'https://proeasysmmpanel.in/' },
     ],
   },
 ];
@@ -67,8 +67,8 @@ const products = [
 const Footer = () => {
   return (
     <div className="bg-black" id="first-section">
-      <div className="mx-auto max-w-2xl pt-1 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
+      <div className="mx-auto max-w-5xl pt-1 pb-16 px-2 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="mt-24 flex flex-wrap justify-between gap-y-10">
           {/* COLUMN-1 */}
 
           <div className="col-span-4">
@@ -111,16 +111,11 @@ const Footer = () => {
 
           {/* {products.map((product) => (
             <div key={product.id} className="group relative col-span-2">
-              <p className="text-white text-xl font-extrabold mb-9">
-                {product.section}
-              </p>
+              <p className="text-white text-xl font-extrabold mb-9">{product.section}</p>
               <ul>
-                {product.link.map((link: string, index: number) => (
+                {product.link.map((link, index) => (
                   <li key={index} className="mb-5">
-                    <Link
-                      href="/"
-                      className="text-white text-lg font-normal mb-6 space-links"
-                    >
+                    <Link href="/" className="text-white text-lg font-normal mb-6 space-links">
                       {link}
                     </Link>
                   </li>
@@ -133,7 +128,7 @@ const Footer = () => {
 
       {/* All Rights Reserved */}
 
-      <div className="mx-auto max-w-2xl lg:max-w-7xl">
+      <div className="mx-auto max-w-5xl lg:max-w-7xl">
         <div className="pt-5 pb-5 px-4 sm:px-6 lg:px-4 border-solid border-t border-footer">
           <div className="mt-4 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 xl:gap-x-8">
             <div>
