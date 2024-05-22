@@ -6,7 +6,7 @@ import Manage from 'components/Manage';
 import Testimonials from 'components/Testimonials';
 import Joinus from 'components/Joinus';
 import Service from 'components/service/page';
-import FAQ from 'components/FAQ';
+// import FAQ from 'components/FAQ';
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <Service />
         <Digital />
         <Manage />
-        <FAQ />
+        {/* <FAQ /> */}
         <Testimonials />
         <Joinus />
       </main>
