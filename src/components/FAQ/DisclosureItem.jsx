@@ -1,6 +1,9 @@
 'use client';
-import { Disclosure } from '@headlessui/react';
+import dynamic from 'next/dynamic';
 import { ChevronUpIcon } from '@heroicons/react/20/solid';
+
+// Dynamically import Disclosure to ensure it only renders on the client side
+const Disclosure = dynamic(() => import('@headlessui/react').then((mod) => mod.Disclosure), { ssr: false });
 
 const DisclosureItem = ({ question, answer }) => (
   <div className="mx-auto w-full max-w-5xl rounded-2xl bg-white py-8 px-6 mb-5">

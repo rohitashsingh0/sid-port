@@ -1,11 +1,14 @@
+// components/Navbar.js
 'use client';
-import { Disclosure } from '@headlessui/react';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from './Drawer';
 import Drawerdata from './Drawerdata';
-import Contactusform from './Contactus';
+// import Contactusform from './Contactus';
+
+const Disclosure = dynamic(() => import('@headlessui/react').then((mod) => mod.Disclosure), { ssr: false });
 
 const navigation = [
   { name: 'Services', href: '/services', current: false },
@@ -18,7 +21,7 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Disclosure as="nav" className="navbar">
@@ -51,7 +54,7 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
-              <Contactusform />
+              {/* <Contactusform /> */}
             </div>
 
             {/* DRAWER FOR MOBILE VIEW */}

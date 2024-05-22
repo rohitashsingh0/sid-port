@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 import { Switch } from '@headlessui/react';
 import Image from 'next/image';
@@ -6,6 +7,7 @@ import Link from 'next/link';
 
 const plans = [
   {
+    id: 1,
     heading: 'Startup',
     price: 41,
     user: 'per user, per month',
@@ -18,6 +20,7 @@ const plans = [
     category: 'yearly',
   },
   {
+    id: 2,
     heading: 'Business',
     price: 29,
     user: 'per user, per month',
@@ -30,6 +33,7 @@ const plans = [
     category: 'yearly',
   },
   {
+    id: 3,
     heading: 'Agency',
     price: 139,
     user: 'per user, per month',
@@ -42,6 +46,7 @@ const plans = [
     category: 'yearly',
   },
   {
+    id: 4,
     heading: 'Agency',
     price: 139,
     user: 'per user, per month',
@@ -54,6 +59,7 @@ const plans = [
     category: 'monthly',
   },
   {
+    id: 5,
     heading: 'Startup',
     price: 41,
     user: 'per user, per month',
@@ -66,6 +72,7 @@ const plans = [
     category: 'monthly',
   },
   {
+    id: 6,
     heading: 'Business',
     price: 29,
     user: 'per user, per month',
@@ -136,8 +143,8 @@ const Manage = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-16 mx-5 gap-14 manage">
-        {filteredData.map((plan, i) => (
-          <div className="manageTabs text-center p-10 border-2 rounded-xl" key={i}>
+        {filteredData.map((plan) => (
+          <div className="manageTabs text-center p-10 border-2 rounded-xl" key={plan.id}>
             <h4 className="text-2xl font-bold mb-3">{plan.heading}</h4>
             <h2 className="text-5xl sm:text-6xl font-extrabold mb-3">${plan.price}</h2>
             <p className="text-sm font-medium text-darkgrey mb-6">{plan.user}</p>
