@@ -72,23 +72,23 @@ export default function Post({ post, socialImage, related }) {
 
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
 
-      <Header>
+      <Header className="py-0 my-0">
         {featuredImage && (
           <FeaturedImage
             {...featuredImage}
             src={featuredImage.sourceUrl}
             dangerouslySetInnerHTML={featuredImage.caption}
-            className="sm:py-5"
+            className="pt-14 sm:pt-20"
           />
         )}
-        <h1
-          className="text-xs"
+        <h2
+          className="sm:text-4xl text-2xl"
           dangerouslySetInnerHTML={{
             __html: title,
           }}
         />
         <Metadata
-          className={`${styles.postMetadata} text-xs mb-0`}
+          className={`${styles.postMetadata} text-sm mb-0 pb-0`}
           date={date}
           author={author}
           categories={categories}
@@ -98,16 +98,16 @@ export default function Post({ post, socialImage, related }) {
       </Header>
 
       <Content>
-        <Section>
+        <div>
           <Container>
             <div
-              className="text-normal"
+              className="text-base sm:text-lg text-justify"
               dangerouslySetInnerHTML={{
                 __html: content,
               }}
             />
           </Container>
-        </Section>
+        </div>
       </Content>
 
       <Section className={styles.postFooter}>
@@ -117,7 +117,7 @@ export default function Post({ post, socialImage, related }) {
             <div className={styles.relatedPosts}>
               {relatedPostsTitle.name ? (
                 <span>
-                  More from <Link href={relatedPostsTitle.link}>{relatedPostsTitle.name}</Link>
+                  Recommended <Link href={relatedPostsTitle.link}>{relatedPostsTitle.name}</Link>
                 </span>
               ) : (
                 <span>More Posts</span>

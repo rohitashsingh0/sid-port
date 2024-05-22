@@ -22,6 +22,9 @@ export function _createApolloClient() {
   return new ApolloClient({
     link: new HttpLink({
       uri: removeLastTrailingSlash(process.env.WORDPRESS_GRAPHQL_ENDPOINT),
+      fetchOptions: {
+        timeout: 60000,
+      },
     }),
     cache: new InMemoryCache({
       typePolicies: {
