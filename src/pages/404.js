@@ -17,17 +17,19 @@ export default function Custom404() {
       </Helmet>
       <Section>
         <Container className={styles.center}>
-          <section class="bg-white">
-            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-              <div class="mx-auto max-w-screen-sm text-center">
-                <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600">404</h1>
-                <p class="mb-4 text-3xl tracking-tight font-bold text-black md:text-4xl">Something&apos;s missing.</p>
-                <p class="mb-4 text-lg font-light text-gray-500 mb-10">
+          <section className="bg-white">
+            <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+              <div className="mx-auto max-w-screen-sm text-center">
+                <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-primary-600">404</h1>
+                <p className="mb-4 text-3xl tracking-tight font-bold text-black md:text-4xl">
+                  Something&apos;s missing.
+                </p>
+                <p className="mb-4 text-lg font-light text-gray-500 mb-10">
                   Sorry, we can&apos;t find that page. You&apos;ll find lots to explore on the home page.{' '}
                 </p>
                 <Link
                   href="/"
-                  class="inline-flex text-white bg-black hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-centermy-4  whitespace-nowrap items-center"
+                  className="inline-flex text-white bg-black hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-sm px-5 py-2.5 text-centermy-4  whitespace-nowrap items-center"
                 >
                   <TiArrowLeft className="mr-2" /> Back to Homepage
                 </Link>
