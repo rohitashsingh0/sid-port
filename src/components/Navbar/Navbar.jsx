@@ -10,9 +10,7 @@ import Contactusform from './Contactus';
 const navigation = [
   { name: 'Services', href: '/services', current: false },
   { name: 'About', href: '/about', current: false },
-  //   { name: "FAQ", href: "#faq-section", current: false },
   { name: 'Blog', href: '/blogs', current: false },
-  //   { name: "Testimonial", href: "#testimonial-section", current: false },
 ];
 
 function classNames(...classes) {
@@ -27,19 +25,17 @@ const Navbar = () => {
       <>
         <div className="mx-auto max-w-7xl p-3 md:p-4 lg:px-8">
           <div className="relative flex h-12 sm:h-20 items-center">
-            <div className="flex flex-1 items-center sm:justify-between">
+            <div className="flex flex-1 items-center justify-between">
               {/* LOGO */}
-
-              <div className="flex flex-shrink-0 items-center ">
+              <div className="flex flex-shrink-0 items-center">
                 <Link href="/" className="text-2xl sm:text-4xl font-semibold text-black">
                   Sidharth
                 </Link>
               </div>
 
               {/* LINKS */}
-
-              <div className="hidden lg:flex items-center ">
-                <div className="flex justify-end space-x-4">
+              <div className="hidden lg:flex items-center">
+                <div className="flex space-x-4">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
@@ -48,26 +44,20 @@ const Navbar = () => {
                         item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
                         'px-3 py-4 rounded-md text-lg font-normal'
                       )}
-                      aria-current={item.href ? 'page' : undefined}
+                      aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}
                     </Link>
                   ))}
                 </div>
               </div>
-              {/* <button className='hidden lg:flex justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white'>Contact us</button> */}
               <Contactusform />
             </div>
 
             {/* DRAWER FOR MOBILE VIEW */}
-
-            {/* DRAWER ICON */}
-
             <div className="block lg:hidden">
               <Bars3Icon className="block h-6 w-6 cursor-pointer" aria-hidden="true" onClick={() => setIsOpen(true)} />
             </div>
-
-            {/* DRAWER LINKS DATA */}
 
             <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
               <Drawerdata />
