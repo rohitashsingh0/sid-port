@@ -3,10 +3,10 @@ import Banner from 'components/Banner';
 import Aboutus from 'components/Aboutus';
 import Service from 'components/service/page';
 import Digital from 'components/Digital';
-import Manage from 'components/Manage';
-// import Testimonials from 'components/Testimonials';
-// import Joinus from 'components/Joinus';
-// import FAQ from 'components/FAQ';
+// import Manage from 'components/Manage';
+import Testimonials from 'components/Testimonials';
+import Joinus from 'components/Joinus';
+import FAQ from 'components/FAQ';
 
 export default function Home() {
   return (
@@ -16,10 +16,10 @@ export default function Home() {
         <Aboutus />
         <Service />
         <Digital />
-        <Manage />
-        {/* <FAQ />
+        {/* <Manage /> */}
+        <FAQ />
         <Testimonials />
-        <Joinus /> */}
+        <Joinus />
       </main>
     </Layout>
   );
