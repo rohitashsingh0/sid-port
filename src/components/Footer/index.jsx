@@ -66,7 +66,7 @@ const products = [
 
 const Footer = () => {
   return (
-    <div className="bg-black" id="first-section">
+    <div className="bg-black w-full" id="first-section">
       <div className="mx-auto max-w-5xl pt-1 pb-16 px-2 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="mt-24 flex flex-wrap justify-between gap-y-10">
           {/* COLUMN-1 */}

@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 my-16">
         {/* COLUMN-1 */}
 
-        <div className="mx-auto sm:mx-0">
+        <div className="mx-auto sm:mx-0 py-5">
           <div className="py-3 text-center lg:text-start">
             <button className="text-blue bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black">
               DESIGN AGENCY

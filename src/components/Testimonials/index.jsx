@@ -95,7 +95,7 @@ const settings = {
 const Testimonials = () => {
   return (
     <div className="bg-testimonial pt-40 pb-32 lg:py-32" id="testimonial-section">
-      <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 ">
+      <div className="mx-auto max-w-7xl sm:py-4 lg:px-8 w-full">
         <div className="text-center">
           <h3 className="text-4xl sm:text-6xl font-bold text-black my-3">See what others are saying.</h3>
           <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4">

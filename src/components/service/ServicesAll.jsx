@@ -50,7 +50,7 @@ const ServicesAll = () => {
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-3">
               {services.map((item, index) => (
                 <div className="p-6 shadow-xl hover:bg-blue rounded-xl border-r-gray-200" key={index}>
-                  <div className="md:flex md:items-start md:-mx-4">
+                  <div className="lg:flex md:items-start md:-mx-4">
                     <span className="inline-block p-2 text-blue-500 bg-blue rounded-xl md:mx-4  ">
                       {React.createElement(item.icon, { className: 'h-8 w-8' })}
                     </span>
