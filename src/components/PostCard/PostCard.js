@@ -5,7 +5,8 @@ import { postPathBySlug, sanitizeExcerpt } from 'lib/posts';
 import Image from 'next/image';
 
 const PostCard = ({ post, options = {} }) => {
-  const { title, excerpt, slug, date, author, categories } = post;
+  const { title, excerpt, slug, date, author, categories, featuredImage } = post;
+  console.log('featuredImage', featuredImage.sourceUrl);
   const { excludeMetadata = [] } = options;
 
   const metadata = {};
@@ -40,11 +41,11 @@ const PostCard = ({ post, options = {} }) => {
         <div className="bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative">
           <Link href={postPathBySlug(slug)}>
             <Image
-              src={post.imgSrc || '/images/articles/article2.png'}
+              src={post.featuredImage.sourceUrl || '/images/articles/article2.png'}
               alt={post.title}
               width={389}
               height={262}
-              className="inline-block m-auto"
+              className="inline-block m-auto rounded w-full"
             />
           </Link>
 

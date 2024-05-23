@@ -59,7 +59,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 my-12">
             {/* COLUMN-1 */}
 
-            <div className="hidden lg:block">
+            <div className="">
               <Image src="/images/banner/banner2.svg" alt="hero-image" width={800} height={642} />
             </div>
 
@@ -72,7 +72,7 @@ const Contact = () => {
                     <input
                       type="name"
                       name="full_name"
-                      className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black w-full"
+                      className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full rounded  bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black w-full"
                       placeholder="Your name"
                       value={formData.full_name}
                       onChange={handleChange}
@@ -83,7 +83,7 @@ const Contact = () => {
                     <input
                       type="email"
                       name="email"
-                      className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l border-linegrey bg-lightgrey focus:outline-none bg-emailbg focus:text-black sm:rounded-full w-full"
+                      className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l rounded  border-linegrey bg-lightgrey focus:outline-none bg-emailbg focus:text-black sm:rounded-full w-full"
                       placeholder="Your email"
                       value={formData.email}
                       onChange={handleChange}
@@ -93,7 +93,7 @@ const Contact = () => {
                   <div>
                     <textarea
                       name="message"
-                      className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l border-linegrey bg-lightgrey focus:outline-none bg-emailbg focus:text-black sm:rounded-full w-full"
+                      className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l rounded  border-linegrey bg-lightgrey focus:outline-none bg-emailbg focus:text-black sm:rounded-full w-full"
                       placeholder="Your Message"
                       value={formData.message}
                       onChange={handleChange}

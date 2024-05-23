@@ -125,7 +125,9 @@ export default function Post({ post, socialImage, related }) {
               <ul>
                 {relatedPostsList.map((post) => (
                   <li key={post.title}>
-                    <Link href={postPathBySlug(post.slug)}>{post.title}</Link>
+                    <Link href={postPathBySlug(post.slug)} className="text-blue">
+                      {post.title}
+                    </Link>
                   </li>
                 ))}
               </ul>

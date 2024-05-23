@@ -13,6 +13,12 @@ export const POST_FIELDS = gql`
         }
       }
     }
+    featuredImage {
+      node {
+        sourceUrl
+        altText
+      }
+    }
     databaseId
     date
     isSticky
