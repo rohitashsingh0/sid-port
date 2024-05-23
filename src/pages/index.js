@@ -1,5 +1,5 @@
 import Layout from 'components/Layout';
-// import Banner from 'components/Banner';
+import Banner from 'components/Banner';
 // import Aboutus from 'components/Aboutus';
 // import Digital from 'components/Digital';
 // import Manage from 'components/Manage';
@@ -12,9 +12,8 @@ export default function Home() {
   return (
     <Layout>
       <main>
-        <h1>Hello World</h1>
-        {/* <Banner />
-        <Aboutus />
+        <Banner />
+        {/* <Aboutus />
         <Service />
         <Digital />
         <Manage />
