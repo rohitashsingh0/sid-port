@@ -2,8 +2,8 @@ import Layout from 'components/Layout';
 import Banner from 'components/Banner';
 import Aboutus from 'components/Aboutus';
 import Service from 'components/service/page';
-// import Digital from 'components/Digital';
-// import Manage from 'components/Manage';
+import Digital from 'components/Digital';
+import Manage from 'components/Manage';
 // import Testimonials from 'components/Testimonials';
 // import Joinus from 'components/Joinus';
 // import FAQ from 'components/FAQ';
@@ -15,9 +15,9 @@ export default function Home() {
         <Banner />
         <Aboutus />
         <Service />
-        {/* <Digital />
+        <Digital />
         <Manage />
-        <FAQ />
+        {/* <FAQ />
         <Testimonials />
         <Joinus /> */}
       </main>
